@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    border: solid 1px black;
+    height: 95vh;
+    aspect-ratio: 1/1;
+}
+
+@media (max-width: 650px) {
+    .main {
+        width: 95vw;
+        height: auto;
+    }
+    
+}
