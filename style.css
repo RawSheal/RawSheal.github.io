@@ -79,7 +79,7 @@ nav {
 
 @media only screen and (max-width: 600px) {
   .cards {
-    height: 60%;
+    height: 40%;
     width: 100%;
   }
 
@@ -87,7 +87,7 @@ nav {
 
 @media only screen and (max-width: 1000px) {
   .cards {
-    height: 70%;
+    height: 50%;
     width: 100%;
   }
 
