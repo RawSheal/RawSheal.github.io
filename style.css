@@ -44,7 +44,7 @@
     height: 50%;
     width: 100%;
     background-color: green;
-     display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -52,15 +52,20 @@
 
 .player1card {
     height: 100%;
-    width: 20%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: blue;
 }
 
 .player2card {
     height: 100%;
-    width: 20%;
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-items: center;
     flex-direction: column;
 }
 
@@ -68,3 +73,22 @@ nav {
     position: absolute;
 }
 
+.cards{
+    height: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+  .cards {
+    height: 60%;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .cards {
+    height: 70%;
+    width: 100%;
+  }
+
+}
