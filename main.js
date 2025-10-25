@@ -1,13 +1,18 @@
 const playButton = document.getElementById('getNumberOfPlayer');
 const dealButton = document.getElementById('dealButton');
 const backToMenu = document.getElementById('backToMenu');
-const player1Reveal1 = document.getElementById('player1Reveal1')
-const player1Reveal3 = document.getElementById('player1Reveal3')
-const player2Reveal1 = document.getElementById('player2Reveal1')
-const playerReveal3 = document.getElementById('playerReveal3')
 
 const player1card = document.getElementsByClassName('player1card');
 const player2card = document.getElementsByClassName('player2card');
+
+const player1card1 = document.getElementById('player1card1');
+const player1card2 = document.getElementById('player1card2');
+const player1card3 = document.getElementById('player1card3');
+
+const player2card1 = document.getElementById('player2card1');
+const player2card2 = document.getElementById('player2card2');
+const player2card3 = document.getElementById('player2card3');
+
 
 
 const menu = document.getElementById('menu');
@@ -54,54 +59,61 @@ function game(){
     }
 
 
-    player1Reveal3.addEventListener('click',()=>{
-    for(let i=0; i<3; i++){
+    player1card1.addEventListener('click',()=>{
         const img = document.createElement('img'); // create an <img> tag
-        img.src = `./cards/PNG-cards-1.3/${players[0][i]}.png`; // set image source
+        img.src = `./cards/PNG-cards-1.3/${players[0][0]}.png`; // set image source
         img.style.width = '50%'; // optional width
         img.style.height = '100%'; // optional height
-        player1card[i].innerHTML = '';
-        player1card[i].appendChild(img)
-    }
-})
+        player1card1.innerHTML = '';
+        player1card1.appendChild(img)
+    })
 
-   player2Reveal3.addEventListener('click',()=>{
-    for(let i=0; i<3; i++){
+    player1card2.addEventListener('click',()=>{
         const img = document.createElement('img'); // create an <img> tag
-        img.src = `./cards/PNG-cards-1.3/${players[1][i]}.png`; // set image source
+        img.src = `./cards/PNG-cards-1.3/${players[0][1]}.png`; // set image source
         img.style.width = '50%'; // optional width
         img.style.height = '100%'; // optional height
-        player2card[i].innerHTML = '';
-        player2card[i].appendChild(img)
-    }
-})
+        player1card2.innerHTML = '';
+        player1card2.appendChild(img)
+    })
 
+    player1card3.addEventListener('click',()=>{
+        const img = document.createElement('img'); // create an <img> tag
+        img.src = `./cards/PNG-cards-1.3/${players[0][2]}.png`; // set image source
+        img.style.width = '50%'; // optional width
+        img.style.height = '100%'; // optional height
+        player1card3.innerHTML = '';
+        player1card3.appendChild(img)
+    })
 
-    // if(numberOfPlayers == 3){
-    //     const player1 = [];
-    //     const player2 = [];
-    //     const player3 = [];
-    //     players.push(player1,player2,player3)
-    // }
-    // if(numberOfPlayers == 4){
-    //     const player1 = [];
-    //     const player2 = [];
-    //     const player3 = [];
-    //     const player4 = [];
-    //     players.push(player1,player2,player3,player4)
-    // }
-    // if(numberOfPlayers == 5){
-    //     const player1 = [];
-    //     const player2 = [];
-    //     const player3 = [];
-    //     const player4 = [];
-    //     const player5 = [];
-    //     players.push(player1,player2,player3,player4,player5)
-    // }
-    console.log(players)
+    player2card1.addEventListener('click',()=>{
+        const img = document.createElement('img'); // create an <img> tag
+        img.src = `./cards/PNG-cards-1.3/${players[1][0]}.png`; // set image source
+        img.style.width = '50%'; // optional width
+        img.style.height = '100%'; // optional height
+        player2card1.innerHTML = '';
+        player2card1.appendChild(img)
+    })
 
+    player2card2.addEventListener('click',()=>{
+        const img = document.createElement('img'); // create an <img> tag
+        img.src = `./cards/PNG-cards-1.3/${players[1][1]}.png`; // set image source
+        img.style.width = '50%'; // optional width
+        img.style.height = '100%'; // optional height
+        player2card2.innerHTML = '';
+        player2card2.appendChild(img)
+    })
 
+    player2card3.addEventListener('click',()=>{
+        const img = document.createElement('img'); // create an <img> tag
+        img.src = `./cards/PNG-cards-1.3/${players[1][2]}.png`; // set image source
+        img.style.width = '50%'; // optional width
+        img.style.height = '100%'; // optional height
+        player2card3.innerHTML = '';
+        player2card3.appendChild(img)
+    })
 }
+
 
 
 playButton.addEventListener('click',()=>{
